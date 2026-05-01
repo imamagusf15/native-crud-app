@@ -33,6 +33,23 @@ Endpoint:
 - PUT /products/{id}
 - DELETE /products/{id}
 
+## Catatan Penggunaan API
+Project ini menggunakan public API dari Fake Store API untuk simulasi proses CRUD.
+
+Perlu diketahui bahwa beberapa endpoint pada public API digunakan hanya untuk simulasi request dan response, sehingga perubahan data tidak tersimpan secara permanen pada server.
+
+Contoh:
+- Create (POST) berhasil mengembalikan response sukses, namun data baru tidak benar-benar tersimpan permanen.
+- Update (PUT) berhasil mengembalikan response sukses, namun perubahan data tidak selalu terlihat setelah refresh.
+- Delete (DELETE) berhasil mengembalikan response sukses, namun data tidak benar-benar terhapus permanen.
+
+Hal ini merupakan keterbatasan public API yang digunakan untuk kebutuhan testing dan demonstrasi integrasi CRUD pada Android Native.
+
+Fokus implementasi project ini adalah:
+- Integrasi REST API menggunakan Retrofit
+- Implementasi CRUD flow pada Android Native Java
+- Penggunaan RecyclerView dan komponen UI Android
+
 ## Komponen UI
 - RecyclerView
 - ImageView
